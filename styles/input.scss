@@ -1,0 +1,23 @@
+// Use of modules
+@use "module-body";
+
+// Use of extend
+%d-flex {
+	display: flex;
+	justify-content: center;
+}
+
+// Use of nesting
+.container {
+	h1 {
+	text-align: center;
+	}
+
+	.selector {
+		@extend %d-flex;
+	}
+
+	.resultado {
+		@extend %d-flex;
+	}
+}

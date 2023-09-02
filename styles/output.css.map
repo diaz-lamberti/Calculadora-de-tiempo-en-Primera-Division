@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"output.css"}
+{"version":3,"sourceRoot":"","sources":["_module-body.scss","input.scss"],"names":[],"mappings":"AAGA;EACC,kBAHU;;AAKV;EACC;;;ACHF;EACC;EACA;;;AAKA;EACA","file":"output.css"}
