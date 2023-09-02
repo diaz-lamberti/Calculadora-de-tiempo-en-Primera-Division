@@ -1,8 +1,10 @@
 // Use of variables
-$bg-color: #7A9D54;
+$bg: url(../img/bg.png);
 
 body {
-	background-color: $bg-color;
+	background-image: $bg;
+	background-size: cover;
+	color: white;
 
 	* {
 		font-family: 'Roboto', sans-serif;

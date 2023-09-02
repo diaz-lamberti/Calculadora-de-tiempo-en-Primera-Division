@@ -1,23 +1,57 @@
 // Use of modules
 @use "module-body";
 
-// Use of extend
-%d-flex {
-	display: flex;
-	justify-content: center;
+
+// Use of mixins
+@mixin fs ($size) {
+    font-size: $size + px;
+}
+
+@mixin ml ($size) {
+    margin-left: $size + px;
+}
+
+@mixin mt ($size) {
+    margin-top: $size + px;
+}
+
+@mixin mr ($size) {
+    margin-right: $size + px;
 }
 
 // Use of nesting
 .container {
-	h1 {
-	text-align: center;
-	}
 
-	.selector {
-		@extend %d-flex;
-	}
+    .title {
+        @include mt(230);
+        @include ml(30);
+        @include fs(20);
+    }
 
-	.resultado {
-		@extend %d-flex;
-	}
+    .selector {
+        @include mt(100);
+        @include ml(30);
+        @include fs(24);
+        font-weight: bolder;
+
+        select {
+            @include fs(20);
+            outline: none;
+        }
+    }
+
+    .resultados {
+
+        display: none;
+        @include mt(100);
+        @include ml(20);
+        @include fs(30);
+        font-weight: bolder;
+
+        span {
+            @include mr(9);
+            @include ml(9);
+        }
+
+    }
 }
