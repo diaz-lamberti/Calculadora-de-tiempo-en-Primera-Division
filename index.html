@@ -1,55 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Calcular tiempo en la Primera Division Argentina</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular tiempo en la Primera Division Argentina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/output.css">
+    <link rel="icon" href="img/logo.ico">
 </head>
+
 <body>
-	<div class="container">
-		<h1>Calcular tiempo en la Primera Division Argentina</h1>
+    <div class="container">
 
-		<div class="selector">
-			<form>
-				<label>Selecciona un equipo:</label>
-				<select>
-					<option>Argentinos Juniors</option>
-					<option>Arsenal</option>
-					<option>Atletico Tucuman</option>
-					<option>Banfield</option>
-					<option>Barracas</option>
-					<option>Belgrano</option>
-					<option>Boca Juniors</option>
-					<option>Central Cba</option>
-					<option>Colon</option>
-					<option>Defensa y Justicia</option>
-					<option>Estudiantes</option>
-					<option>Gimnasia</option>
-					<option>Godoy Cruz</option>
-					<option>Huracan</option>
-					<option>Independiente</option>
-					<option>Instituto</option>
-					<option>Lanus</option>
-					<option>Newells</option>
-					<option>Platense</option>
-					<option>Racing</option>
-					<option>River Plate</option>
-					<option>Rosario Central</option>
-					<option>San Lorenzo</option>
-					<option>Sarmiento</option>
-					<option>Talleres</option>
-					<option>Tigre</option>
-					<option>Union</option>
-					<option>Velez</option>
-				</select>
+        <div class="title">
+            <h1>Calcular tiempo en la Primera Division Argentina</h1>
+        </div>
 
-				<input type="submit" value="Calcular">
-			</form>
-		</div>
-
-		<div class="resultado">
-			<span id="anios"></span>Años, <span id="meses"></span>Meses, <span id="dias"></span>Dias, <span id="horas"></span>Horas, <span id="minutos"></span>Minutos, <span id="segundos"></span>Segundos
-		</div>
-	</div>
+        <div class="selector">
+            <form id="selectorForm">
+                <label>Selecciona un equipo:</label>
+                <select id="equipoSelect">
+                    <option class="a" value="default">-</option>
+                    <option value="Argentinos Juniors">Argentinos Juniors</option>
+                    <option value="Arsenal">Arsenal</option>
+                    <option value="Atletico Tucuman">Atletico Tucuman</option>
+                    <option value="Banfield">Banfield</option>
+                    <option value="Barracas">Barracas</option>
+                    <option value="Belgrano">Belgrano</option>
+                    <option value="Boca Juniors">Boca Juniors</option>
+                    <option value="Central Cordoba (SdE)">Central Cordoba (SdE)</option>
+                    <option value="Colon">Colon</option>
+                    <option value="Defensa y Justicia">Defensa y Justicia</option>
+                    <option value="Estudiantes (LP)">Estudiantes (LP)</option>
+                    <option value="Gimnasia (LP)">Gimnasia (LP)</option>
+                    <option value="Godoy Cruz">Godoy Cruz</option>
+                    <option value="Huracan">Huracan</option>
+                    <option value="Independiente">Independiente</option>
+                    <option value="Instituto">Instituto</option>
+                    <option value="Lanus">Lanus</option>
+                    <option value="Newells">Newells</option>
+                    <option value="Platense">Platense</option>
+                    <option value="Racing">Racing</option>
+                    <option value="River Plate">River Plate</option>
+                    <option value="Rosario Central">Rosario Central</option>
+                    <option value="San Lorenzo">San Lorenzo</option>
+                    <option value="Sarmiento (J)">Sarmiento (J)</option>
+                    <option value="Talleres (C)">Talleres (C)</option>
+                    <option value="Tigre">Tigre</option>
+                    <option value="Union">Union</option>
+                    <option value="Velez">Velez</option>
+                </select>
+            </form>
+        </div>
+        <div class="resultados" id="resultadoDiv">
+            <span id="ages"></span>años, <span id="months"></span>meses, <span id="days"></span>dias, <span id="hours"></span>horas, <span id="minutes"></span>minutos y <span id="seconds"></span>segundos
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/index.js"></script>
 </body>
+
 </html>
