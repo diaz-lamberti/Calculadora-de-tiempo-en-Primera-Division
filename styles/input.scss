@@ -22,29 +22,38 @@
 // Use of nesting
 .container {
 
-    .title {
-        @include mt(230);
-        @include ml(30);
+    .container-selector {
+        @include mt(160);
+        @include ml(90);
         @include fs(20);
     }
 
     .selector {
-        @include mt(100);
-        @include ml(30);
-        @include fs(24);
+        @include mt(90);
+        @include ml(90);
+        @include fs(18);
         font-weight: bolder;
 
-        select {
-            @include fs(20);
-            outline: none;
+        #equipoSelect {
+            margin-top: 10px;
         }
+
+        select {
+            @include fs(16);
+            outline: none;
+
+            .default {
+                text-align: center;
+            }
+        }
+
     }
 
     .resultados {
 
         display: none;
         @include mt(100);
-        @include ml(20);
+        @include ml(80);
         @include fs(30);
         font-weight: bolder;
 
@@ -53,5 +62,41 @@
             @include ml(9);
         }
 
+    }
+}
+
+.container-galeria {
+    position: fixed;
+    bottom: 0;
+    height: 250px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    .galeria {
+        height: 200px;
+        display: inline-flex;
+
+        .image {
+            position: relative;
+            top: -100px;
+            left: -51px;
+            width: 61px;
+            height: 500px;
+            transform: rotate(15deg);
+            cursor: pointer;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position-x: center;
+            background-position-y: center;
+            background-size: cover;
+            margin: 5px;
+            transition: 1s;
+        }
+
+        .image:hover {
+            transition: 1s;
+            background-size: 100px;
+        }
     }
 }
