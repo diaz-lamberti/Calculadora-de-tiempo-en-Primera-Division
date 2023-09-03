@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcular tiempo en la Primera Division Argentina</title>
+    <title>Calculadora de tiempo en Primera Division</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -14,16 +14,15 @@
 
 <body>
     <div class="container">
-
-        <div class="title">
-            <h1>Calcular tiempo en la Primera Division Argentina</h1>
+        <div class="container-selector">
+            <h1>Calculadora de tiempo en Primera Division</h1>
+            <h5>Conoce con exactitud cuanto tiempo lleva un club en la Primera Division Argentina desde su ultimo ascenso.</h4>
         </div>
-
         <div class="selector">
             <form id="selectorForm">
                 <label>Selecciona un equipo:</label>
                 <select id="equipoSelect">
-                    <option class="a" value="default">-</option>
+                    <option class="default" value="default">-</option>
                     <option value="Argentinos Juniors">Argentinos Juniors</option>
                     <option value="Arsenal">Arsenal</option>
                     <option value="Atletico Tucuman">Atletico Tucuman</option>
@@ -56,7 +55,39 @@
             </form>
         </div>
         <div class="resultados" id="resultadoDiv">
-            <span id="ages"></span>años, <span id="months"></span>meses, <span id="days"></span>dias, <span id="hours"></span>horas, <span id="minutes"></span>minutos y <span id="seconds"></span>segundos
+            <span id="ages"></span>años, <span id="months"></span>meses, <span id="days"></span>dias, <span id="hours"></span>horas, <span id="minutes"></span>minutos y <span id="seconds"></span>segundos en Primera
+        </div>
+    </div>
+    <div class="container-galeria">
+        <div class="galeria">
+            <div class="image" style="background-image: url(img/escudos/argentinos-juniors.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/arsenal.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/atletico-tucuman.svg.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/banfield.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/barracas-central.svg.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/belgrano.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/boca-juniors.svg.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/central-cordoba.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/colon.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/defensa-y-justicia.svg.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/estudiantes.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/gimnasia.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/godoy-cruz.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/huracan.svg.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/independiente.svg.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/instituto.svg.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/lanus.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/newells.svg.webp);"></div>
+            <div class="image" style="background-image: url(img/escudos/platense.svg.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/racing.svg.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/river-plate.svg.webp);"></div>
+            <div class="image" style="background-image: url(img/escudos/rosario-central.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/san-lorenzo.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/sarmiento.webp);"></div>
+            <div class="image" style="background-image: url(img/escudos/talleres.svg.webp);"></div>
+            <div class="image" style="background-image: url(img/escudos/tigre.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/union.svg.png);"></div>
+            <div class="image" style="background-image: url(img/escudos/velez.png);"></div>
         </div>
     </div>
     <script type="text/javascript" src="scripts/index.js"></script>
