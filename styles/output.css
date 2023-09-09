@@ -1,29 +1,87 @@
 body {
-  background-image: url(../img/bg.png);
-  background-size: cover;
+  background-color: #00476b;
   color: white;
-  background-repeat: no-repeat;
+  margin: 0;
 }
 body * {
   font-family: "Roboto", sans-serif;
 }
 
-.container .container-selector {
-  margin-top: 160px;
-  margin-left: 90px;
-  font-size: 20px;
+@media (min-width: 571px) and (max-width: 1148px) {
+  .col {
+    display: grid !important;
+    grid-template-columns: repeat(14, auto);
+  }
+  .resultados {
+    margin-top: 20px !important;
+  }
+  .escudos {
+    margin-top: 30px !important;
+  }
+  .escudos img {
+    margin-top: 6px !important;
+    margin-left: 12px !important;
+  }
+  .selector select {
+    margin-bottom: 30px !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 570px) {
+  .col {
+    display: grid !important;
+    grid-template-columns: repeat(7, auto);
+  }
+  .resultados {
+    margin-top: 20px !important;
+  }
+  .escudos {
+    margin-top: 30px !important;
+  }
+  .escudos img {
+    margin-top: 6px !important;
+    margin-left: 12px !important;
+  }
+  .selector select {
+    margin-bottom: 30px !important;
+  }
 }
 .container .selector {
-  margin-top: 90px;
-  margin-left: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 75vw;
+  max-width: 1000px;
+  min-width: 320px;
+  margin: auto;
+}
+.container .img-logo {
+  width: 60px;
+  height: 70px;
+  margin-top: 180px;
+  transition: 0.2s ease-in-out;
+}
+.container .logo,
+.container .title,
+.container .description {
+  text-align: center;
+}
+.container .description {
+  margin-top: 40px;
+}
+.container .container-selector {
+  margin-top: 130px;
+  font-size: 24px;
+}
+.container .selector {
+  margin-top: 60px;
   font-size: 18px;
   font-weight: bolder;
 }
-.container .selector #equipoSelect {
-  margin-top: 10px;
-}
 .container .selector select {
   font-size: 16px;
+  margin-top: 10px;
   outline: none;
 }
 .container .selector select .default {
@@ -31,47 +89,30 @@ body * {
 }
 .container .resultados {
   display: none;
-  margin-top: 100px;
-  margin-left: 80px;
-  font-size: 30px;
+  flex-wrap: wrap;
   font-weight: bolder;
+  font-size: 20px;
+  margin-top: 60px;
 }
 .container .resultados span {
   margin-right: 9px;
   margin-left: 9px;
 }
-
-.container-galeria {
-  position: fixed;
-  bottom: 0;
-  height: 250px;
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
+.container .escudos img {
+  width: 27px;
+  height: 27px;
+  margin-top: 60px;
+  margin-left: 3px;
+  opacity: 0.5;
+  filter: grayscale(50%);
+  transition: ease 0.1s;
 }
-.container-galeria .galeria {
-  height: 200px;
-  display: inline-flex;
+.container img:hover {
+  filter: none;
+  opacity: 1;
 }
-.container-galeria .galeria .image {
-  position: relative;
-  top: -100px;
-  left: -51px;
-  width: 61px;
-  height: 500px;
-  transform: rotate(15deg);
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-x: center;
-  background-position-y: center;
-  background-size: cover;
-  margin: 5px;
-  transition: 1s;
-}
-.container-galeria .galeria .image:hover {
-  transition: 1s;
-  background-size: 100px;
+.container .col {
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -1,102 +1,101 @@
 // Use of modules
 @use "module-body";
+@use "media-queries";
 
+// Use of extend
+%d-flex {
+    display: flex;
+    justify-content: center;
+}
 
 // Use of mixins
 @mixin fs ($size) {
     font-size: $size + px;
 }
 
-@mixin ml ($size) {
-    margin-left: $size + px;
-}
-
 @mixin mt ($size) {
     margin-top: $size + px;
-}
-
-@mixin mr ($size) {
-    margin-right: $size + px;
 }
 
 // Use of nesting
 .container {
 
+    width: 75vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+
+    .img-logo {
+        width: 60px;
+        height: 70px;
+        @include mt(180);
+        transition: 0.2s ease-in-out;
+    }
+
+    .logo,
+    .title,
+    .description {
+        text-align: center;
+    }
+
+    .description {
+        @include mt(40);
+    }
+
     .container-selector {
-        @include mt(160);
-        @include ml(90);
-        @include fs(20);
+        @include mt(130);
+        @include fs(24);
+
     }
 
     .selector {
-        @include mt(90);
-        @include ml(90);
+        @include mt(60);
         @include fs(18);
+        @extend %d-flex;
         font-weight: bolder;
-
-        #equipoSelect {
-            margin-top: 10px;
-        }
 
         select {
             @include fs(16);
+            @include mt(10);
             outline: none;
 
             .default {
                 text-align: center;
             }
         }
-
     }
 
     .resultados {
 
         display: none;
-        @include mt(100);
-        @include ml(80);
-        @include fs(30);
+        flex-wrap: wrap;
         font-weight: bolder;
+        @include fs(20);
+        @include mt(60);
 
         span {
-            @include mr(9);
-            @include ml(9);
-        }
-
-    }
-}
-
-.container-galeria {
-    position: fixed;
-    bottom: 0;
-    height: 250px;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-
-    .galeria {
-        height: 200px;
-        display: inline-flex;
-
-        .image {
-            position: relative;
-            top: -100px;
-            left: -51px;
-            width: 61px;
-            height: 500px;
-            transform: rotate(15deg);
-            cursor: pointer;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position-x: center;
-            background-position-y: center;
-            background-size: cover;
-            margin: 5px;
-            transition: 1s;
-        }
-
-        .image:hover {
-            transition: 1s;
-            background-size: 100px;
+            margin-right: 9px;
+            margin-left: 9px;
         }
     }
+
+    .escudos img {
+        width: 27px;
+        height: 27px;
+        margin-top: 60px;
+        margin-left: 3px;
+        opacity: 0.5;
+        filter: grayscale(50%);
+        transition: ease 0.1s;
+    }
+
+    img:hover {
+        filter: none;
+        opacity: 1;
+    }
+
+    .col {
+        flex-wrap: wrap;
+    }
+
 }
