@@ -8,19 +8,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/output.css">
     <link rel="icon" href="img/logo.ico">
 </head>
 
 <body>
     <div class="container">
-        <div class="container-selector">
-            <h1>Calculadora de tiempo <br> en Primera Division</h1>
-            <h6>Conoce con exactitud cuanto tiempo lleva un club en la <br> Primera Division Argentina desde su ultimo ascenso.</h6>
+        <div class="logo">
+            <a href="https://www.ligaprofesional.ar/" target="blanck"><img class="img-logo" src="img/logo-lpf.png"></a>
+        </div>
+        <div class="title">
+            <h1>Calculadora de tiempo en Primera Division</h1>
+        </div>
+        <div class="description">
+            <p>Conoce con exactitud cuanto tiempo lleva un club en la Primera Division Argentina desde su ultimo ascenso.</p>
         </div>
         <div class="selector">
             <form id="selectorForm">
-                <label>Selecciona un equipo:</label>
+                <label>Selecciona un equipo</label><br>
                 <select id="equipoSelect">
                     <option class="default" value="default">-</option>
                     <option value="Argentinos Juniors">Argentinos Juniors</option>
@@ -55,39 +61,39 @@
             </form>
         </div>
         <div class="resultados" id="resultadoDiv">
-            <span id="ages"></span>años, <span id="months"></span>meses, <span id="days"></span>dias, <span id="hours"></span>horas, <span id="minutes"></span>minutos y <span id="seconds"></span>segundos en Primera
+            <span id="ages"></span>años, <span id="months"></span>meses, <span id="days"></span>dias, <br> <span id="hours"></span>horas, <span id="minutes"></span>minutos y <span id="seconds"></span>segundos en Primera
         </div>
-    </div>
-    <div class="container-galeria">
-        <div class="galeria"> 
-            <a href="https://argentinosjuniors.com.ar/" target="_blank"><div class="image" id="argentinos-juniors"></div></a>
-            <a href="https://www.arsenalfc.com.ar/" target="_blank"><div class="image" id="arsenal"></div></a>
-            <a href="https://www.clubatleticotucuman.com.ar/" target="_blank"><div class="image" id="atletico-tucuman"></div></a>
-            <a href="https://clubabanfield.org/" target="_blank"><div class="image" id="banfield"></div></a>
-            <a href="https://www.barracascentral.com/" target="_blank"><div class="image" id="barracas"></div></a>
-            <a href="https://www.belgranocordoba.com/" target="_blank"><div class="image" id="belgrano"></div></a>
-            <a href="https://www.bocajuniors.com.ar/" target="_blank"><div class="image" id="boca-juniors"></div></a>
-            <a href="https://www.cacentralcordoba.com/#/" target="_blank"><div class="image" id="central-cordoba"></div></a>
-            <a href="https://clubcolon.com.ar/" target="_blank"><div class="image" id="colon"></div></a>
-            <a href="http://defensayjusticia.org.ar/" target="_blank"><div class="image" id="defensa-y-justicia"></div></a>
-            <a href="https://estudiantesdelaplata.com/" target="_blank"><div class="image" id="estudiantes"></div></a>
-            <a href="https://www.gimnasia.org.ar/" target="_blank"><div class="image" id="gimnasia"></div></a>
-            <a href="http://clubgodoycruz.com.ar/" target="_blank"><div class="image" id="godoy-cruz"></div></a>
-            <a href="https://cahuracan.com/" target="_blank"><div class="image" id="huracan"></div></a>
-            <a href="https://clubaindependiente.com.ar/" target="_blank"><div class="image" id="independiente"></div></a>
-            <a href="https://institutoacc.com.ar/" target="_blank"><div class="image" id="instituto"></div></a>
-            <a href="https://clublanus.com/" target="_blank"><div class="image" id="lanus"></div></a>
-            <a href="https://newellsoldboys.com.ar/" target="_blank"><div class="image" id="newells"></div></a>
-            <a href="https://cap.org.ar/" target="_blank"><div class="image" id="platense"></div></a>
-            <a href="https://www.racingclub.com.ar/" target="_blank"><div class="image" id="racing"></div></a>
-            <a href="https://www.cariverplate.com.ar/" target="_blank"><div class="image" id="river-plate"></div></a>
-            <a href="https://rosariocentral.com/" target="_blank"><div class="image" id="rosario-central"></div></a>
-            <a href="https://sanlorenzo.com.ar/" target="_blank"><div class="image" id="san-lorenzo"></div></a>
-            <a href="https://clubatleticosarmiento.com/" target="_blank"><div class="image" id="sarmiento"></div></a>
-            <a href="https://www.clubtalleres.com.ar/" target="_blank"><div class="image" id="talleres"></div></a>
-            <a href="https://catigre.com.ar/" target="_blank"><div class="image" id="tigre"></div></a>
-            <a href="https://www.clubaunion.com.ar/" target="_blank"><div class="image" id="union"></div></a>
-            <a href="https://velez.com.ar/" target="_blank"><div class="image" id="velez"></div></a>
+        <div class="row container-escudos">
+            <div class="col escudos d-flex justify-content-center align-items-center">
+                <a href="https://argentinosjuniors.com.ar/" target="blanck"><img src="img/escudos/argentinos-juniors.png"></a>
+                <a href="https://www.arsenalfc.com.ar/" target="blanck"><img src="img/escudos/arsenal.png" class="arsenal"></a>
+                <a href="https://www.clubatleticotucuman.com.ar/" target="blanck"><img src="img/escudos/atletico-tucuman.svg.png"></a>
+                <a href="https://clubabanfield.org/" target="blanck"><img src="img/escudos/banfield.png"></a>
+                <a href="https://www.barracascentral.com/" target="blanck"><img src="img/escudos/barracas-central.svg.png"></a>
+                <a href="https://www.belgranocordoba.com/" target="blanck"><img src="img/escudos/belgrano.png"></a>
+                <a href="http://www.bocajuniors.com.ar/" target="blanck"><img src="img/escudos/boca-juniors.svg.png"></a>
+                <a href="https://www.cacentralcordoba.com/" target="blanck"><img src="img/escudos/central-cordoba.png"></a>
+                <a href="https://clubcolon.com.ar/" target="blanck"><img src="img/escudos/colon.png"></a>
+                <a href="http://defensayjusticia.org.ar/" target="blanck"><img src="img/escudos/defensa-y-justicia.svg.png"></a>
+                <a href="https://estudiantesdelaplata.com/" target="blanck"><img src="img/escudos/estudiantes.png"></a>
+                <a href="https://www.gimnasia.org.ar/" target="blanck"><img src="img/escudos/gimnasia.png"></a>
+                <a href="http://clubgodoycruz.com.ar/" target="blanck"><img src="img/escudos/godoy-cruz.png"></a>
+                <a href="https://cahuracan.com/" target="blanck"><img src="img/escudos/huracan.svg.png"></a>
+                <a href="https://clubaindependiente.com.ar/" target="blanck"><img src="img/escudos/independiente.svg.png"></a>
+                <a href="https://institutoacc.com.ar/" target="blanck"><img src="img/escudos/instituto.svg.png"></a>
+                <a href="https://clublanus.com/" target="blanck"><img src="img/escudos/lanus.png"></a>
+                <a href="https://newellsoldboys.com.ar/" target="blanck"><img src="img/escudos/newells.svg.webp"></a>
+                <a href="https://cap.org.ar/" target="blanck"><img src="img/escudos/platense.svg.png"></a>
+                <a href="https://www.racingclub.com.ar/" target="blanck"><img src="img/escudos/racing.svg.png"></a>
+                <a href="https://www.cariverplate.com.ar/" target="blanck"><img src="img/escudos/river-plate.svg.webp"></a>
+                <a href="https://rosariocentral.com/" target="blanck"><img src="img/escudos/rosario-central.png"></a>
+                <a href="https://sanlorenzo.com.ar/" target="blanck"><img src="img/escudos/san-lorenzo.png"></a>
+                <a href="https://clubatleticosarmiento.com/" target="blanck"><img src="img/escudos/sarmiento.webp"></a>
+                <a href="https://www.clubtalleres.com.ar/" target="blanck"><img src="img/escudos/talleres.svg.webp"></a>
+                <a href="https://catigre.com.ar/" target="blanck"><img src="img/escudos/tigre.png"></a>
+                <a href="https://www.clubaunion.com.ar/" target="blanck"><img src="img/escudos/union.svg.png"></a>
+                <a href="https://velez.com.ar/" target="blanck"><img src="img/escudos/velez.png"></a>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="scripts/index.js"></script>
