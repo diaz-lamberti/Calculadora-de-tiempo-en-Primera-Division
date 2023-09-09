@@ -1,35 +1,56 @@
-// 4K
-@media (min-width: 1921px) {
-    .container-galeria {
-        height: 450px !important;
+@media (min-width: 571px) and (max-width: 1148px) {
 
-        .image {
-            left: -85px !important;
-            width: 86px !important;
-            height: 680px !important;
-            background-size: 770px !important;
-        }
-    }
-
-    .container-selector {
-        margin-top: 220px !important;
-        font-size: 50px !important;
-    }
-
-    .selector {
-        font-size: 30px !important;
-
-        select {
-            font-size: 25px !important;
-        }
+    .col {
+        display: grid !important;
+        grid-template-columns: repeat(14, auto);
     }
 
     .resultados {
-        font-size: 48px !important;
+        margin-top: 20px !important;
     }
 
-    body {
-        background-size: cover;
-        background-repeat: repeat !important;
+    .escudos {
+        margin-top: 30px !important;
     }
+
+    .escudos img {
+        margin-top: 6px !important;
+        margin-left: 12px !important;
+    }
+
+    .selector {
+        select {
+            margin-bottom: 30px !important;
+        }
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 570px) {
+
+    .col {
+        display: grid !important;
+        grid-template-columns: repeat(7, auto);
+    }
+
+    .resultados {
+        margin-top: 20px !important;
+    }
+
+    .escudos {
+        margin-top: 30px !important;
+    }
+
+
+    .escudos img {
+        margin-top: 6px !important;
+        margin-left: 12px !important;
+    }
+
+    .selector {
+        select {
+            margin-bottom: 30px !important;
+        }
+    }
+
 }
