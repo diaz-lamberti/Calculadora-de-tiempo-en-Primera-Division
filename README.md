@@ -1,6 +1,6 @@
-<p align="center">
-<h1>Calculadora de tiempo en Primera Division</h1>
-</p>
+<h1 align="center">
+Calculadora de tiempo en Primera Division
+</h1>
 
 <p align="center">
   <a href="https://diaz-lamberti.github.io/Calculadora-de-tiempo-en-Primera-Division/">
