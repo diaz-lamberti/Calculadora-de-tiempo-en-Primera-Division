@@ -1,8 +1,8 @@
 # Calculadora de tiempo en Primera Division
 
-<p align="center">
+
 [![](https://res.cloudinary.com/dvrkhos9z/image/upload/v1694367472/logo-lpf_jj2kuq.png)](https://diaz-lamberti.github.io/Calculadora-de-tiempo-en-Primera-Division/)
-</p>
+
 
 ------------
 
