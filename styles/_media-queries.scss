@@ -1,12 +1,10 @@
-@media (min-width: 571px) and (max-width: 1148px) {
-
+@media (min-width: 320px) and (max-width: 1148px) {
     .img-logo {
         margin-top: 100px !important;
     }
 
     .col {
         display: grid !important;
-        grid-template-columns: repeat(14, auto);
     }
 
     .resultados {
@@ -28,39 +26,20 @@
             margin-bottom: 30px !important;
         }
     }
+}
 
+@media (min-width: 571px) and (max-width: 1148px) {
+    .col {
+        grid-template-columns: repeat(14, auto);
+    }
 }
 
 @media (min-width: 320px) and (max-width: 570px) {
-
-    .img-logo {
-        margin-top: 100px !important;
-    }
-
     .col {
-        display: grid !important;
         grid-template-columns: repeat(7, auto);
     }
 
-    .resultados {
-        margin-top: 20px !important;
-    }
-
-    .escudos {
+    .description {
         margin-top: 30px !important;
-        margin-bottom: 60px !important;
     }
-
-
-    .escudos img {
-        margin-top: 6px !important;
-        margin-left: 12px !important;
-    }
-
-    .selector {
-        select {
-            margin-bottom: 30px !important;
-        }
-    }
-
 }
