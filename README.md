@@ -4,7 +4,7 @@ Calculadora de tiempo en Primera Division
 
 <p align="center">
   <a href="https://diaz-lamberti.github.io/Calculadora-de-tiempo-en-Primera-Division/">
-    <img src="https://res.cloudinary.com/dvrkhos9z/image/upload/v1694367472/logo-lpf_jj2kuq.png" alt="Logo LPF">
+    <img src="https://res.cloudinary.com/dvrkhos9z/image/upload/v1694367472/logo-lpf_jj2kuq.png">
   </a>
 </p>
 
@@ -14,7 +14,9 @@ Calculadora de tiempo en Primera Division
 
 ------------
 
-![](https://res.cloudinary.com/dvrkhos9z/image/upload/v1694368057/Untitled_enpfau.jpg)
+<p align="center">
+  <img src="https://res.cloudinary.com/dvrkhos9z/image/upload/v1694368057/Untitled_enpfau.jpg">
+</p>
 
 ------------
 
