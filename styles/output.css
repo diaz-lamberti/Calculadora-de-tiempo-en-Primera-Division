@@ -8,6 +8,9 @@ body * {
 }
 
 @media (min-width: 571px) and (max-width: 1148px) {
+  .img-logo {
+    margin-top: 100px !important;
+  }
   .col {
     display: grid !important;
     grid-template-columns: repeat(14, auto);
@@ -17,6 +20,7 @@ body * {
   }
   .escudos {
     margin-top: 30px !important;
+    margin-bottom: 60px !important;
   }
   .escudos img {
     margin-top: 6px !important;
@@ -27,6 +31,9 @@ body * {
   }
 }
 @media (min-width: 320px) and (max-width: 570px) {
+  .img-logo {
+    margin-top: 100px !important;
+  }
   .col {
     display: grid !important;
     grid-template-columns: repeat(7, auto);
@@ -36,6 +43,7 @@ body * {
   }
   .escudos {
     margin-top: 30px !important;
+    margin-bottom: 60px !important;
   }
   .escudos img {
     margin-top: 6px !important;
@@ -59,6 +67,7 @@ body * {
 .container .img-logo {
   width: 60px;
   height: 70px;
+  margin-bottom: 12px;
   margin-top: 180px;
   transition: 0.2s ease-in-out;
 }

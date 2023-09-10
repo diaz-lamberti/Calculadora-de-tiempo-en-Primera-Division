@@ -1,5 +1,9 @@
 @media (min-width: 571px) and (max-width: 1148px) {
 
+    .img-logo {
+        margin-top: 100px !important;
+    }
+
     .col {
         display: grid !important;
         grid-template-columns: repeat(14, auto);
@@ -11,6 +15,7 @@
 
     .escudos {
         margin-top: 30px !important;
+        margin-bottom: 60px !important;
     }
 
     .escudos img {
@@ -28,6 +33,10 @@
 
 @media (min-width: 320px) and (max-width: 570px) {
 
+    .img-logo {
+        margin-top: 100px !important;
+    }
+
     .col {
         display: grid !important;
         grid-template-columns: repeat(7, auto);
@@ -39,6 +48,7 @@
 
     .escudos {
         margin-top: 30px !important;
+        margin-bottom: 60px !important;
     }
 
 
