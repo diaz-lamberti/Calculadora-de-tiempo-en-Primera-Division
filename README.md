@@ -22,7 +22,8 @@ Una simple calculadora donde seleccionando un equipo podremos saber cuanto tiemp
 
 ------------
 
-<p align="center">`HTML` `Sass` `Javascript`</p>
+<p>Este es un ejemplo de código en línea: <code>&lt;html&gt; &lt;body&gt; &lt;p&gt;Hola Mundo!&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;</code>.</p>
+
 
 ------------
 <h6 align="center">
