@@ -1,5 +1,5 @@
 <p align="center">
-# Calculadora de tiempo en Primera Division
+<h1>Calculadora de tiempo en Primera Division</h1>
 </p>
 
 <p align="center">
