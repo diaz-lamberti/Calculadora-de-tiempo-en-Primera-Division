@@ -24,6 +24,8 @@ body * {
   .escudos img {
     margin-top: 6px !important;
     margin-left: 12px !important;
+    filter: none !important;
+    opacity: 1 !important;
   }
   .selector select {
     margin-bottom: 30px !important;
@@ -56,9 +58,9 @@ body * {
 .container .img-logo {
   width: 60px;
   height: 70px;
-  margin-bottom: 12px;
   margin-top: 180px;
   transition: 0.2s ease-in-out;
+  margin-bottom: 12px;
 }
 .container .logo,
 .container .title,

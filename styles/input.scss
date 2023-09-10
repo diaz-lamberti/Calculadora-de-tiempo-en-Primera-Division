@@ -28,9 +28,9 @@
     .img-logo {
         width: 60px;
         height: 70px;
-        margin-bottom: 12px;
         @include mt(180);
         transition: 0.2s ease-in-out;
+        margin-bottom: 12px;
     }
 
     .logo,
