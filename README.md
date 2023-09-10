@@ -25,9 +25,11 @@ Una simple calculadora donde seleccionando un equipo podremos saber cuanto tiemp
 `HTML` `Sass` `Javascript`
 
 ---
-
-###### &copy; 2023 Alan Diaz Lamberti
-
+<h6 align="center">
+ &copy; 2023 Alan Diaz Lamberti
+</h6>
 ---
 
+<h6 align="center">
 ###### 10 de Septiembre de 2023
+</h6>
