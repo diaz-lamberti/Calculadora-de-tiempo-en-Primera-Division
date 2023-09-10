@@ -1,5 +1,5 @@
 <h1 align="center">
-Calculadora de tiempo en Primera Division
+  Calculadora de tiempo en Primera Division
 </h1>
 
 <p align="center">
@@ -11,7 +11,7 @@ Calculadora de tiempo en Primera Division
 ------------
 
 <h4 align="center">
-Una simple calculadora donde seleccionando un equipo podremos saber cuanto tiempo lleva en la Primera Division Argentina de futbol desde su ultimo ascenso (omitiendo descensos y ascensos anteriores).
+  Una simple calculadora donde seleccionando un equipo podremos saber cuanto tiempo lleva en la Primera Division Argentina de futbol desde su ultimo ascenso (omitiendo descensos y ascensos anteriores).
 </h4>
 
 ------------
@@ -22,8 +22,11 @@ Una simple calculadora donde seleccionando un equipo podremos saber cuanto tiemp
 
 ------------
 
-<p>Este es un ejemplo de código en línea: <code>&lt;html&gt; &lt;body&gt; &lt;p&gt;Hola Mundo!&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;</code>.</p>
-
+<p align="center">
+  <code>HTML</code>
+  <code>Sass</code>
+  <code>Javascript</code>
+</p>
 
 ------------
 <h6 align="center">
@@ -33,5 +36,5 @@ Una simple calculadora donde seleccionando un equipo podremos saber cuanto tiemp
 ------------
 
 <h6 align="center">
-10 de Septiembre de 2023
+  10 de Septiembre de 2023
 </h6>
