@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         seconds: document.getElementById("seconds"),
     };
 
-    const equipos = {
+    let equipos = {
         "-": null,
         "Argentinos Juniors": "2017-09-08",
         "Arsenal": "2019-06-29",
@@ -20,19 +20,20 @@ document.addEventListener("DOMContentLoaded", function() {
         "Belgrano": "2023-01-29",
         "Boca Juniors": "1913-03-13",
         "Central Cordoba (SdE)": "2019-06-28",
-        "Colon": "2015-01-14",
         "Defensa y Justicia": "2014-07-09",
         "Estudiantes (LP)": "1995-07-23",
         "Gimnasia (LP)": "2013-07-04",
         "Godoy Cruz": "2008-07-09",
         "Huracan": "2015-03-15",
         "Independiente": "2014-07-10",
+        "Independiente de Rivadavia": "2024-01-25",
         "Instituto": "2023-01-29",
         "Lanus": "1993-08-12",
         "Newells": "1964-03-26",
         "Platense": "2021-06-17",
         "Racing": "1985-05-13",
         "River Plate": "2012-07-05",
+        "Riestra": "2024-01-26",
         "Rosario Central": "2013-07-04",
         "San Lorenzo": "1983-05-12",
         "Sarmiento (J)": "2021-06-16",
@@ -51,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         const fechaActual = new Date();
-        const tiempoEnPrimera = fechaActual - new Date(fechaAscenso);
+        let tiempoEnPrimera = fechaActual - new Date(fechaAscenso);
         const segundos = Math.floor(tiempoEnPrimera / 1000);
         const minutos = Math.floor(segundos / 60);
         const horas = Math.floor(minutos / 60);
