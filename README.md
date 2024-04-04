@@ -24,6 +24,7 @@
 
 <p align="center">
   <code>HTML</code>
+  <code>CSS</code>
   <code>Sass</code>
   <code>Javascript</code>
 </p>
